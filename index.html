@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Part-3</title>
+</head>
+<body>
+    <!--normal HTML-->
+    <h1>Hello Baccho - PW Skills</h1>
+
+    <p id="js"></p>
+    <p id="one"></p>
+    <p id="two"></p>
+
+<button onclick="hey()" id="three">Submit </button>
+<button onclick="hey1()" id="four">Login now <br></button>
+
+
+    <h2></h2>
+
+    <!--javascript start-->
+    <script>
+        document.addEventListener("click", hello)              // 1. event listener is ("click") , 2. event listener is ("dblclick") i.e. double click" , 3.event listener is (mouseenter)
+
+        function hello() {
+            document.getElementById("js").innerText = "Welcome to our new Batches of Full  Stack Development"
+
+            document.getElementById("one").innerText = "This is your first induction class by 'Anurag Tiwari Sir' "
+
+            document.getElementById("two").innerText = "So, Everyone requested to join the classes on Time"
+        }
+
+
+        function hey(){
+            document.getElementById("three").innerText = "Submitted"
+            document.getElementById("three").style.color ="red"
+            document.getElementById("three").style.backgroundColor = "black"
+            document.getElementById("three").style.padding = "20px"
+            document.getElementById("three").style.border = "5px solid yellow"
+        }
+
+        function hey1(){
+            document.getElementById("four").innerText ="Login Now"
+        }
+    </script>
+
+
+</body>
+</html>
